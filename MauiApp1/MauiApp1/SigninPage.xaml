@@ -16,7 +16,7 @@
                FontAttributes="Bold"
                HorizontalOptions="Center"
                TextColor="Black"/>
-                <Label Text="Welcome back!"
+                <Label Text="Hello!"
                FontSize="18"
                HorizontalOptions="Center"
                TextColor="Black"/>
