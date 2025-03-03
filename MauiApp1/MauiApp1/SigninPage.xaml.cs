@@ -6,4 +6,11 @@ public partial class SigninPage : ContentPage
 	{
 		InitializeComponent();
 	}
+
+	public void Tap_Register(object sender, TappedEventArgs e)
+	{
+		
+        Navigation.PushAsync(new SignupPage());
+    }
+
 }

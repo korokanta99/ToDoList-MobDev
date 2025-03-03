@@ -2,72 +2,71 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp1.SignupPage"
-            Shell.NavBarIsVisible="False"
-             Title="SignupPage">
-    <Grid RowDefinitions="1*,8*,1*">
-        <Frame BackgroundColor="{StaticResource DashboardBackground}"
-               Grid.Row="1" VerticalOptions="CenterAndExpand"
-               Margin="0, 0, 40, 0">
+            BackgroundColor="#333333">
+    
+    <Grid RowDefinitions="9*,1*" Padding="10">
+        <Frame BackgroundColor="#333333"
+                VerticalOptions="Center"
+               BorderColor="Transparent">
 
             <VerticalStackLayout>
                 <Label Text="Register"
-                       FontSize="32"
+                       FontSize="50"
                        FontAttributes="Bold"
-                       HorizontalOptions="Center"
-                       TextColor="Black"/>
+                       HorizontalOptions="Start"
+                       TextColor="White"
+                       Margin="10,0,0,0"/>
                 <Label Text="Join Us Today"
                        FontSize="18"
-                       HorizontalOptions="Center"
-                       TextColor="Black"/>
+                       HorizontalOptions="Start"
+                       TextColor="White"
+                       Margin="10,0,0,10"/>
 
                 <Frame BackgroundColor="{StaticResource DashboardBackground}"
                        CornerRadius="10"
-                       Margin="20">
+                       Margin="10,20,10,10"
+                       HasShadow="True">
                     <VerticalStackLayout>
                         <Label Text="Username"
                                FontSize="14"
                                TextColor="Black"/>
                         <Entry Placeholder="Enter your username"
                                BackgroundColor="White"
-                               Margin="0,0,0,10"/>
+                               Margin="0,0,0,10" TextColor="Black"
+                               />
 
                         <Label Text="Email"
                                FontSize="14"
                                TextColor="Black"/>
                         <Entry Placeholder="Enter your email"
                                BackgroundColor="White"
-                               Margin="0,0,0,10"/>
+                               Margin="0,0,0,10" TextColor="Black"/>
 
                         <Label Text="Password"
                                FontSize="14"
                                TextColor="Black"/>
                         <Entry Placeholder="Enter your password"
                                IsPassword="True"
-                               BackgroundColor="White"/>
+                               BackgroundColor="White" TextColor="Black"
+                               Margin="0,0,0,10"/>
 
                         <Label Text="Confirm Password"
                                FontSize="14"
                                TextColor="Black"/>
                         <Entry Placeholder="Enter your password"
                                IsPassword="True"
-                               BackgroundColor="White"/>
+                               BackgroundColor="White" TextColor="Black"
+                               Margin="0,0,0,10"
+                               />
 
                         <Button Text="Register"
                                 BackgroundColor="Gold"
                                 TextColor="Black"
                                 CornerRadius="5"
-                                Margin="0,10,0,0"/>
+                                />
                     </VerticalStackLayout>
                 </Frame>
 
-                <HorizontalStackLayout HorizontalOptions="Center">
-                    <Label Text="Already have an Account? "
-                           FontSize="14"
-                           TextColor="Black"/>
-                    <Label Text="Login here"
-                           FontSize="14"
-                           TextColor="Green"/>
-                </HorizontalStackLayout>
             </VerticalStackLayout>
 
         </Frame>
