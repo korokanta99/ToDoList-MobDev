@@ -9,66 +9,96 @@
                 VerticalOptions="Center"
                BorderColor="Transparent">
 
-            <VerticalStackLayout>
+            <ScrollView>
+                <VerticalStackLayout>
+                
                 <Label Text="Register"
-                       FontSize="50"
-                       FontAttributes="Bold"
-                       HorizontalOptions="Start"
-                       TextColor="White"
-                       Margin="10,0,0,0"/>
+                           FontSize="50"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Start"
+                           TextColor="White"
+                           Margin="10,0,0,0"/>
                 <Label Text="Join Us Today"
-                       FontSize="18"
-                       HorizontalOptions="Start"
-                       TextColor="White"
-                       Margin="10,0,0,10"/>
+                           FontSize="18"
+                           HorizontalOptions="Start"
+                           TextColor="White"
+                           Margin="10,0,0,10"/>
 
-                <Frame BackgroundColor="{StaticResource DashboardBackground}"
-                       CornerRadius="10"
-                       Margin="10,20,10,10"
-                       HasShadow="True">
-                    <VerticalStackLayout>
-                        <Label Text="Username"
-                               FontSize="14"
-                               TextColor="Black"/>
-                        <Entry Placeholder="Enter your username"
-                               BackgroundColor="White"
-                               Margin="0,0,0,10" TextColor="Black"
-                               />
+                    <Frame BackgroundColor="{StaticResource DashboardBackground}"
+                           CornerRadius="10"
+                           Margin="10,20,10,10"
+                           HasShadow="True">
+                        <VerticalStackLayout>
+                            <Label Text="Username"
+                                   FontSize="14"
+                                   TextColor="Black"
+                                   Margin="0,0,0,5"/>
 
-                        <Label Text="Email"
-                               FontSize="14"
-                               TextColor="Black"/>
-                        <Entry Placeholder="Enter your email"
-                               BackgroundColor="White"
-                               Margin="0,0,0,10" TextColor="Black"/>
-
-                        <Label Text="Password"
-                               FontSize="14"
-                               TextColor="Black"/>
-                        <Entry Placeholder="Enter your password"
+                            <Frame BorderColor="Transparent"
+                                   Padding="1"
+                                   BackgroundColor="White"
+                                   Margin="0,0,0,10">
+                                <Entry Placeholder="Enter your username"
                                IsPassword="True"
                                BackgroundColor="White" TextColor="Black"
-                               Margin="0,0,0,10"/>
+                               />
+                            </Frame>
 
-                        <Label Text="Confirm Password"
-                               FontSize="14"
-                               TextColor="Black"/>
-                        <Entry Placeholder="Enter your password"
+                            <Label Text="Email"
+                                   FontSize="14"
+                                   TextColor="Black"
+                                   Margin="0,0,0,5"/>
+
+                            <Frame BorderColor="Transparent"
+                                   Padding="1"
+                                   BackgroundColor="White"
+                                   Margin="0,0,0,10">
+                                <Entry Placeholder="Enter your email"
                                IsPassword="True"
                                BackgroundColor="White" TextColor="Black"
-                               Margin="0,0,0,10"
                                />
+                            </Frame>
 
-                        <Button Text="Register"
-                                BackgroundColor="Gold"
-                                TextColor="Black"
-                                CornerRadius="5"
-                                />
-                    </VerticalStackLayout>
-                </Frame>
+                            <Label Text="Password"
+                                   FontSize="14"
+                                   TextColor="Black"
+                                   Margin="0,0,0,5"/>
 
-            </VerticalStackLayout>
+                            <Frame BorderColor="Transparent"
+                                   Padding="1"
+                                   BackgroundColor="White"
+                                   Margin="0,0,0,10">
+                                <Entry Placeholder="Enter your password"
+                               IsPassword="True"
+                               BackgroundColor="White" TextColor="Black"
+                               />
+                            </Frame>
 
+                            <Label Text="Confirm Password"
+                                   FontSize="14"
+                                   TextColor="Black"
+                                   Margin="0,0,0,5"/>
+
+
+                            <Frame BorderColor="Transparent"
+                                   Padding="1"
+                                   BackgroundColor="White"
+                                   Margin="0,0,0,10">
+                                <Entry Placeholder="Confirm your password"
+                               IsPassword="True"
+                               BackgroundColor="White" TextColor="Black"
+                               />
+                            </Frame>
+
+                            <Button Text="Register"
+                                    BackgroundColor="Gold"
+                                    TextColor="Black"
+                                    CornerRadius="5"
+                                    />
+                        </VerticalStackLayout>
+                    </Frame>
+                </VerticalStackLayout>
+            </ScrollView>
         </Frame>
     </Grid>
 </ContentPage>

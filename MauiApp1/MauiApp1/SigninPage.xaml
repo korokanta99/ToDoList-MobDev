@@ -29,21 +29,37 @@
                Margin="0, 20, 0, 5"
                BorderColor="Transparent">
                     <VerticalStackLayout>
+                        
                         <Label Text="Email or Username"
                        FontSize="14"
                        TextColor="Black"
-                       Margin="0,25,0,0"/>
-                        <Entry Placeholder="Enter your email or username"
-                       BackgroundColor="White"
-                       Margin="0,0,0,10"/>
+                       Margin="0,25,0,5"/>
+
+
+                        <Frame Margin="0,0,0,10"
+                               Padding="1"
+                               BackgroundColor="White"
+                               BorderColor="Transparent">
+                                <Entry Placeholder="Enter your email or username"
+                               BackgroundColor="White"/>
+                            </Frame>
 
                         <Label Text="Password"
                        FontSize="14"
-                       TextColor="Black"/>
-                        <Entry Placeholder="Enter your password"
-                       IsPassword="True"
-                       BackgroundColor="White"
-                       Margin="0,0,0,10"/>
+                       TextColor="Black"
+                       Margin="0,0,0,5"/>
+
+                        <Frame Margin="0,0,0,10"
+                                   Padding="1"
+                                   BackgroundColor="White"
+                                   BorderColor="Transparent">
+                                
+                                <Entry Placeholder="Enter your password"
+                               IsPassword="True"
+                               BackgroundColor="White"
+                               TextColor="Black"
+                               />
+                        </Frame>
 
                         <Button Text="Login"
                         BackgroundColor="Gold"
