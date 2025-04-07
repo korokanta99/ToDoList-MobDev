@@ -3,22 +3,84 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp1.ToDoList"
              Title="ToDoList"
-             BackgroundColor="LightGray">
-    <Grid RowDefinitions="150, *, 50" Padding="0,0,0,10">
+             BackgroundColor="DarkGray">
+    <Grid RowDefinitions="80, *, 70" Padding="0,0,0,10">
 
-        <VerticalStackLayout BackgroundColor="DarkGray">
-            <Label HorizontalOptions="Center" Text="ToDo List"/>
-            <Image HorizontalOptions="End" Source="user-icon-svgrepo-com.png"/>
-        </VerticalStackLayout>
+        <Grid BackgroundColor="#444444"
+              Margin="0"
+              ColumnDefinitions="*, 10"
+              RowDefinitions="*, 10"
+              Padding="10,8,5,0">
+            <Label HorizontalOptions="Start" Text="ToDo List"
+                   VerticalOptions="Center"
+                   FontAttributes="Bold"
+                   FontSize="40"
+                   Padding="40,3,0,0"
+                   Margin="0,0,0,10"
+                   />
+            <Image HorizontalOptions="End" Source="user_icon_svgrepo.svg"
+                WidthRequest="40"
+                HeightRequest="35" 
+                />
 
-        <ScrollView Grid.Row="1">
-            <Grid>
-                
-            </Grid>
-        </ScrollView>
+        </Grid>
 
-        <VerticalStackLayout Grid.Row="2">
-            
+        <ListView x:Name="taskLV" Grid.Row="1" RowHeight="80">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell Height="0">
+                        <Grid Padding="10"
+                              ColumnDefinitions="*, Auto, Auto"
+                              HeightRequest="80"
+                              
+                              >
+                            <Border
+                                   Padding="10"
+                                   Margin="0,5"
+                                   BackgroundColor="White"
+                                   StrokeShape="RoundRectangle 10">
+                                <Label Text="{Binding taskname}"
+                                VerticalOptions="Fill"
+                                FontSize="18"
+                                TextColor="Black"
+                                       />
+                            </Border>
+
+                            <Image Source="trash_svgrepo.svg" Grid.Column="1"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"
+                                   WidthRequest="25"
+                                   HeightRequest="25"
+                                   Margin="10,0,5,0">
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="Tap_Delete"/>
+                                </Image.GestureRecognizers>
+                            </Image>
+
+                            <Image Source="check_svgrepo.png" Grid.Column="2"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"
+                                   WidthRequest="25"
+                                   HeightRequest="25"
+                                   Margin="10,0,5,0"
+                                   >
+                            </Image>
+
+
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <VerticalStackLayout Grid.Row="2" Padding="10" Margin="0,0,10,0">
+            <Button HorizontalOptions="End" BackgroundColor="Gold"
+                    Padding="5"
+                    WidthRequest="120"
+                    HeightRequest="50"
+                    Text="Add Task  +"
+                    FontAttributes="Bold"
+                    FontSize="15"/>
         </VerticalStackLayout>
         
     </Grid>
