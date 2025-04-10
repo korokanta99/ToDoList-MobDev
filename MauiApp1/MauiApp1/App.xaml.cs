@@ -5,11 +5,13 @@
         public App()
         {
             InitializeComponent();
+
+            MainPage = new NavigationPage(new SigninPage());
         }
 
-        protected override Window CreateWindow(IActivationState? activationState)
-        {
-            return new Window(new ToDoList());
-        }
+        //protected override Window CreateWindow(IActivationState? activationState)
+        //{
+        //    return new Window(new NavigationPage(new SigninPage()));
+        //}
     }
 }

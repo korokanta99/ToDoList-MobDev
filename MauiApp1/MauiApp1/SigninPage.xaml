@@ -62,11 +62,13 @@
                                />
                         </Frame>
 
-                        <Button Text="Login"
+                        <Button x:Name="LoginButton"
+                        Text="Login"
                         BackgroundColor="Gold"
                         TextColor="Black"
                         CornerRadius="5"
-                        Margin="0,10,0,25"/>
+                        Margin="0,10,0,25"
+                        Clicked="Button_Clicked"/>
                     </VerticalStackLayout>
                 </Frame>
 
