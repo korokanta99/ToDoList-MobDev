@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\AJ\\source\\repos\\korokanta99\\ToDoList-MobDev\\MauiApp1\\MauiApp1\\MauiApp1.csproj": {}
+    "C:\\Users\\AJ\\Desktop\\Mobdev\\ToDoList-MobDev\\MauiApp1\\MauiApp1\\MauiApp1.csproj": {}
   },
   "projects": {
-    "C:\\Users\\AJ\\source\\repos\\korokanta99\\ToDoList-MobDev\\MauiApp1\\MauiApp1\\MauiApp1.csproj": {
+    "C:\\Users\\AJ\\Desktop\\Mobdev\\ToDoList-MobDev\\MauiApp1\\MauiApp1\\MauiApp1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\AJ\\source\\repos\\korokanta99\\ToDoList-MobDev\\MauiApp1\\MauiApp1\\MauiApp1.csproj",
+        "projectUniqueName": "C:\\Users\\AJ\\Desktop\\Mobdev\\ToDoList-MobDev\\MauiApp1\\MauiApp1\\MauiApp1.csproj",
         "projectName": "MauiApp1",
-        "projectPath": "C:\\Users\\AJ\\source\\repos\\korokanta99\\ToDoList-MobDev\\MauiApp1\\MauiApp1\\MauiApp1.csproj",
+        "projectPath": "C:\\Users\\AJ\\Desktop\\Mobdev\\ToDoList-MobDev\\MauiApp1\\MauiApp1\\MauiApp1.csproj",
         "packagesPath": "C:\\Users\\AJ\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\AJ\\source\\repos\\korokanta99\\ToDoList-MobDev\\MauiApp1\\MauiApp1\\obj\\",
+        "outputPath": "C:\\Users\\AJ\\Desktop\\Mobdev\\ToDoList-MobDev\\MauiApp1\\MauiApp1\\obj\\",
         "projectStyle": "PackageReference",
         "crossTargeting": true,
         "fallbackFolders": [
@@ -67,6 +67,18 @@
         "net9.0-android35.0": {
           "targetAlias": "net9.0-android",
           "dependencies": {
+            "Devart.Data.MySql": {
+              "target": "Package",
+              "version": "[9.4.193, )"
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[9.0.0, )"
@@ -80,6 +92,10 @@
               "target": "Package",
               "version": "[9.0.0, )",
               "autoReferenced": true
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[9.2.0, )"
             }
           },
           "imports": [
@@ -106,6 +122,18 @@
         "net9.0-ios18.0": {
           "targetAlias": "net9.0-ios",
           "dependencies": {
+            "Devart.Data.MySql": {
+              "target": "Package",
+              "version": "[9.4.193, )"
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[9.0.0, )"
@@ -119,6 +147,10 @@
               "target": "Package",
               "version": "[9.0.0, )",
               "autoReferenced": true
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[9.2.0, )"
             }
           },
           "imports": [
@@ -145,6 +177,18 @@
         "net9.0-maccatalyst18.0": {
           "targetAlias": "net9.0-maccatalyst",
           "dependencies": {
+            "Devart.Data.MySql": {
+              "target": "Package",
+              "version": "[9.4.193, )"
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[9.0.0, )"
@@ -158,6 +202,10 @@
               "target": "Package",
               "version": "[9.0.0, )",
               "autoReferenced": true
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[9.2.0, )"
             }
           },
           "imports": [
@@ -185,6 +233,18 @@
         "net9.0-windows10.0.19041": {
           "targetAlias": "net9.0-windows10.0.19041.0",
           "dependencies": {
+            "Devart.Data.MySql": {
+              "target": "Package",
+              "version": "[9.4.193, )"
+            },
+            "Microsoft.Data.SqlClient": {
+              "target": "Package",
+              "version": "[6.0.1, )"
+            },
+            "Microsoft.Extensions.Logging.Abstractions": {
+              "target": "Package",
+              "version": "[9.0.0, )"
+            },
             "Microsoft.Extensions.Logging.Debug": {
               "target": "Package",
               "version": "[9.0.0, )"
@@ -192,6 +252,10 @@
             "Microsoft.Maui.Controls": {
               "target": "Package",
               "version": "[9.0.0, )"
+            },
+            "MySql.Data": {
+              "target": "Package",
+              "version": "[9.2.0, )"
             }
           },
           "imports": [
