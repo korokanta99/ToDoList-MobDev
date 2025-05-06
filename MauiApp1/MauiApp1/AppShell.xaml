@@ -9,9 +9,12 @@
             Title="Pending"
             ContentTemplate="{DataTemplate local:ToDoList}"
             Route="ToDoList" />
+        
         <ShellContent
-    Title="Completed"
-    ContentTemplate="{DataTemplate local:ToDoList}"
-    Route="ToDoList" />
+        Title="Completed"
+        ContentTemplate="{DataTemplate local:ToDoList}"
+        Route="ToDoList" />
+        
+        
     </TabBar>
 </Shell>
