@@ -6,7 +6,7 @@
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new SigninPage());
+            MainPage = new NavigationPage(new ToDoList());
         }
 
         //protected override Window CreateWindow(IActivationState? activationState)

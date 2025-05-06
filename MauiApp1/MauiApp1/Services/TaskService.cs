@@ -1,5 +1,6 @@
 namespace MauiApp1.Services;
 using MauiApp1;
+using System.Linq;
 using System.Collections.Generic;
 using System.Net.Http;
 using System.Threading.Tasks;
@@ -18,16 +19,17 @@ public class TaskService
 
     public async Task<List<tasklist>> GetTasksAsync(int userId, string status)
     {
-        var url = $"{BaseUrl}/getItems_action.php?userId={userId}&status={status}";
+        var url = $"{BaseUrl}/getItems_action.php?status={status}&user_id={userId}";
         var response = await _httpClient.GetAsync(url);
 
-        var result = JsonConvert.DeserializeObject<APIResponse>(response);
+        var responseString = await response.Content.ReadAsStringAsync();
+        var result = JsonConvert.DeserializeObject<APIResponse>(responseString);
 
         if (result.status == 200 && result.data != null)
         {
             return result.data;
         }
-        
+
         return new List<tasklist>();
     }
 

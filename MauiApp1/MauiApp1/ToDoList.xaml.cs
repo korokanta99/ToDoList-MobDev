@@ -12,10 +12,10 @@ public partial class ToDoList : ContentPage
 		InitializeComponent();
         NavigationPage.SetHasBackButton(this, false);
 
-        taskview.Add(new tasklist() { id = 1, taskname = "Eating", description = "I want to eat something." });
-		taskview.Add(new tasklist() { id = 2, taskname = "Playing", description = "I want to play something." });
-		taskview.Add(new tasklist() { id = 3, taskname = "Sleeping", description = "I want to sleep later." });
-		taskview.Add(new tasklist() { id = 4, taskname = "Watching", description = "I want to watch a movie." });
+        taskview.Add(new tasklist() { id = 1, taskname = "Eating", description = "I want to eat something.", status = "Incomplete" , userId = 4});
+		taskview.Add(new tasklist() { id = 2, taskname = "Playing", description = "I want to play something.", status = "Incomplete", userId = 4 });
+		taskview.Add(new tasklist() { id = 3, taskname = "Sleeping", description = "I want to sleep later.", status = "Incomplete", userId = 4 });
+		taskview.Add(new tasklist() { id = 4, taskname = "Watching", description = "I want to watch a movie.", status = "Incomplete", userId = 4});
 		taskLV.ItemsSource = taskview;
 
 	}
