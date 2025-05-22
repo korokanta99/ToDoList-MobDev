@@ -1,33 +1,45 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\AJ\\source\\repos\\korokanta99\\ToDoList-MobDev\\MauiApp1\\",
+  "WorkspaceRootPath": "C:\\Users\\AJ\\Desktop\\bewer\\ToDoList-MobDev\\MauiApp1\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{288A0C5B-8CB8-44BC-A0E4-491695F192C9}|MauiApp1\\MauiApp1.csproj|c:\\users\\aj\\source\\repos\\korokanta99\\todolist-mobdev\\mauiapp1\\mauiapp1\\signinpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{288A0C5B-8CB8-44BC-A0E4-491695F192C9}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\signinpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{288A0C5B-8CB8-44BC-A0E4-491695F192C9}|MauiApp1\\MauiApp1.csproj|c:\\users\\aj\\source\\repos\\korokanta99\\todolist-mobdev\\mauiapp1\\mauiapp1\\signuppage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{288A0C5B-8CB8-44BC-A0E4-491695F192C9}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\signuppage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{288A0C5B-8CB8-44BC-A0E4-491695F192C9}|MauiApp1\\MauiApp1.csproj|c:\\users\\aj\\source\\repos\\korokanta99\\todolist-mobdev\\mauiapp1\\mauiapp1\\resources\\styles\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{288A0C5B-8CB8-44BC-A0E4-491695F192C9}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\resources\\styles\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{288A0C5B-8CB8-44BC-A0E4-491695F192C9}|MauiApp1\\MauiApp1.csproj|c:\\users\\aj\\source\\repos\\korokanta99\\todolist-mobdev\\mauiapp1\\mauiapp1\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{288A0C5B-8CB8-44BC-A0E4-491695F192C9}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{288A0C5B-8CB8-44BC-A0E4-491695F192C9}|MauiApp1\\MauiApp1.csproj|c:\\users\\aj\\source\\repos\\korokanta99\\todolist-mobdev\\mauiapp1\\mauiapp1\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{288A0C5B-8CB8-44BC-A0E4-491695F192C9}|MauiApp1\\MauiApp1.csproj|c:\\users\\aj\\desktop\\bewer\\todolist-mobdev\\mauiapp1\\mauiapp1\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{288A0C5B-8CB8-44BC-A0E4-491695F192C9}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\appshell.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{288A0C5B-8CB8-44BC-A0E4-491695F192C9}|MauiApp1\\MauiApp1.csproj|c:\\users\\aj\\source\\repos\\korokanta99\\todolist-mobdev\\mauiapp1\\mauiapp1\\resources\\styles\\colors.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{288A0C5B-8CB8-44BC-A0E4-491695F192C9}|MauiApp1\\MauiApp1.csproj|c:\\users\\aj\\desktop\\bewer\\todolist-mobdev\\mauiapp1\\mauiapp1\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{288A0C5B-8CB8-44BC-A0E4-491695F192C9}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{288A0C5B-8CB8-44BC-A0E4-491695F192C9}|MauiApp1\\MauiApp1.csproj|c:\\users\\aj\\desktop\\bewer\\todolist-mobdev\\mauiapp1\\mauiapp1\\services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{288A0C5B-8CB8-44BC-A0E4-491695F192C9}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\services\\apiservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{288A0C5B-8CB8-44BC-A0E4-491695F192C9}|MauiApp1\\MauiApp1.csproj|c:\\users\\aj\\desktop\\bewer\\todolist-mobdev\\mauiapp1\\mauiapp1\\signuppage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{288A0C5B-8CB8-44BC-A0E4-491695F192C9}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\signuppage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{288A0C5B-8CB8-44BC-A0E4-491695F192C9}|MauiApp1\\MauiApp1.csproj|c:\\users\\aj\\desktop\\bewer\\todolist-mobdev\\mauiapp1\\mauiapp1\\signinpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{288A0C5B-8CB8-44BC-A0E4-491695F192C9}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\signinpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{288A0C5B-8CB8-44BC-A0E4-491695F192C9}|MauiApp1\\MauiApp1.csproj|c:\\users\\aj\\desktop\\bewer\\todolist-mobdev\\mauiapp1\\mauiapp1\\signinpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{288A0C5B-8CB8-44BC-A0E4-491695F192C9}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\signinpage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{288A0C5B-8CB8-44BC-A0E4-491695F192C9}|MauiApp1\\MauiApp1.csproj|c:\\users\\aj\\desktop\\bewer\\todolist-mobdev\\mauiapp1\\mauiapp1\\mauiapp1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{288A0C5B-8CB8-44BC-A0E4-491695F192C9}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\mauiapp1.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{288A0C5B-8CB8-44BC-A0E4-491695F192C9}|MauiApp1\\MauiApp1.csproj|c:\\users\\aj\\desktop\\bewer\\todolist-mobdev\\mauiapp1\\mauiapp1\\resources\\styles\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{288A0C5B-8CB8-44BC-A0E4-491695F192C9}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\resources\\styles\\styles.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{288A0C5B-8CB8-44BC-A0E4-491695F192C9}|MauiApp1\\MauiApp1.csproj|c:\\users\\aj\\desktop\\bewer\\todolist-mobdev\\mauiapp1\\mauiapp1\\resources\\styles\\colors.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{288A0C5B-8CB8-44BC-A0E4-491695F192C9}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\resources\\styles\\colors.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{288A0C5B-8CB8-44BC-A0E4-491695F192C9}|MauiApp1\\MauiApp1.csproj|c:\\users\\aj\\source\\repos\\korokanta99\\todolist-mobdev\\mauiapp1\\mauiapp1\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{288A0C5B-8CB8-44BC-A0E4-491695F192C9}|MauiApp1\\MauiApp1.csproj|c:\\users\\aj\\desktop\\bewer\\todolist-mobdev\\mauiapp1\\mauiapp1\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{288A0C5B-8CB8-44BC-A0E4-491695F192C9}|MauiApp1\\MauiApp1.csproj|solutionrelative:mauiapp1\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
@@ -38,32 +50,75 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 9,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
+              "Title": "ApiService.cs",
+              "DocumentMoniker": "C:\\Users\\AJ\\Desktop\\bewer\\ToDoList-MobDev\\MauiApp1\\MauiApp1\\Services\\ApiService.cs",
+              "RelativeDocumentMoniker": "MauiApp1\\Services\\ApiService.cs",
+              "ToolTip": "C:\\Users\\AJ\\Desktop\\bewer\\ToDoList-MobDev\\MauiApp1\\MauiApp1\\Services\\ApiService.cs",
+              "RelativeToolTip": "MauiApp1\\Services\\ApiService.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAkwBsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T16:04:18.729Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SigninPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\AJ\\Desktop\\bewer\\ToDoList-MobDev\\MauiApp1\\MauiApp1\\SigninPage.xaml.cs",
+              "RelativeDocumentMoniker": "MauiApp1\\SigninPage.xaml.cs",
+              "ToolTip": "C:\\Users\\AJ\\Desktop\\bewer\\ToDoList-MobDev\\MauiApp1\\MauiApp1\\SigninPage.xaml.cs",
+              "RelativeToolTip": "MauiApp1\\SigninPage.xaml.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAswC4AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T16:03:15.26Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MauiApp1",
+              "DocumentMoniker": "C:\\Users\\AJ\\Desktop\\bewer\\ToDoList-MobDev\\MauiApp1\\MauiApp1\\MauiApp1.csproj",
+              "RelativeDocumentMoniker": "MauiApp1\\MauiApp1.csproj",
+              "ToolTip": "C:\\Users\\AJ\\Desktop\\bewer\\ToDoList-MobDev\\MauiApp1\\MauiApp1\\MauiApp1.csproj",
+              "RelativeToolTip": "MauiApp1\\MauiApp1.csproj",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-22T15:33:48.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "SignupPage.xaml",
-              "DocumentMoniker": "C:\\Users\\AJ\\source\\repos\\korokanta99\\ToDoList-MobDev\\MauiApp1\\MauiApp1\\SignupPage.xaml",
+              "DocumentMoniker": "C:\\Users\\AJ\\Desktop\\bewer\\ToDoList-MobDev\\MauiApp1\\MauiApp1\\SignupPage.xaml",
               "RelativeDocumentMoniker": "MauiApp1\\SignupPage.xaml",
-              "ToolTip": "C:\\Users\\AJ\\source\\repos\\korokanta99\\ToDoList-MobDev\\MauiApp1\\MauiApp1\\SignupPage.xaml",
+              "ToolTip": "C:\\Users\\AJ\\Desktop\\bewer\\ToDoList-MobDev\\MauiApp1\\MauiApp1\\SignupPage.xaml",
               "RelativeToolTip": "MauiApp1\\SignupPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAqAAAAAAAAAA==",
+              "ViewState": "AgIAAEMAAAAAAAAAAAAvwFMAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-03-02T06:25:44.706Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "Styles.xaml",
-              "DocumentMoniker": "C:\\Users\\AJ\\source\\repos\\korokanta99\\ToDoList-MobDev\\MauiApp1\\MauiApp1\\Resources\\Styles\\Styles.xaml",
+              "DocumentMoniker": "C:\\Users\\AJ\\Desktop\\bewer\\ToDoList-MobDev\\MauiApp1\\MauiApp1\\Resources\\Styles\\Styles.xaml",
               "RelativeDocumentMoniker": "MauiApp1\\Resources\\Styles\\Styles.xaml",
-              "ToolTip": "C:\\Users\\AJ\\source\\repos\\korokanta99\\ToDoList-MobDev\\MauiApp1\\MauiApp1\\Resources\\Styles\\Styles.xaml",
+              "ToolTip": "C:\\Users\\AJ\\Desktop\\bewer\\ToDoList-MobDev\\MauiApp1\\MauiApp1\\Resources\\Styles\\Styles.xaml",
               "RelativeToolTip": "MauiApp1\\Resources\\Styles\\Styles.xaml",
               "ViewState": "AgIAAJQBAAAAAAAAAADgv6EBAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
@@ -72,11 +127,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "App.xaml",
-              "DocumentMoniker": "C:\\Users\\AJ\\source\\repos\\korokanta99\\ToDoList-MobDev\\MauiApp1\\MauiApp1\\App.xaml",
+              "DocumentMoniker": "C:\\Users\\AJ\\Desktop\\bewer\\ToDoList-MobDev\\MauiApp1\\MauiApp1\\App.xaml",
               "RelativeDocumentMoniker": "MauiApp1\\App.xaml",
-              "ToolTip": "C:\\Users\\AJ\\source\\repos\\korokanta99\\ToDoList-MobDev\\MauiApp1\\MauiApp1\\App.xaml",
+              "ToolTip": "C:\\Users\\AJ\\Desktop\\bewer\\ToDoList-MobDev\\MauiApp1\\MauiApp1\\App.xaml",
               "RelativeToolTip": "MauiApp1\\App.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
@@ -85,11 +140,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Colors.xaml",
-              "DocumentMoniker": "C:\\Users\\AJ\\source\\repos\\korokanta99\\ToDoList-MobDev\\MauiApp1\\MauiApp1\\Resources\\Styles\\Colors.xaml",
+              "DocumentMoniker": "C:\\Users\\AJ\\Desktop\\bewer\\ToDoList-MobDev\\MauiApp1\\MauiApp1\\Resources\\Styles\\Colors.xaml",
               "RelativeDocumentMoniker": "MauiApp1\\Resources\\Styles\\Colors.xaml",
-              "ToolTip": "C:\\Users\\AJ\\source\\repos\\korokanta99\\ToDoList-MobDev\\MauiApp1\\MauiApp1\\Resources\\Styles\\Colors.xaml",
+              "ToolTip": "C:\\Users\\AJ\\Desktop\\bewer\\ToDoList-MobDev\\MauiApp1\\MauiApp1\\Resources\\Styles\\Colors.xaml",
               "RelativeToolTip": "MauiApp1\\Resources\\Styles\\Colors.xaml",
               "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
@@ -98,36 +153,37 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "AppShell.xaml",
-              "DocumentMoniker": "C:\\Users\\AJ\\source\\repos\\korokanta99\\ToDoList-MobDev\\MauiApp1\\MauiApp1\\AppShell.xaml",
+              "DocumentMoniker": "C:\\Users\\AJ\\Desktop\\bewer\\ToDoList-MobDev\\MauiApp1\\MauiApp1\\AppShell.xaml",
               "RelativeDocumentMoniker": "MauiApp1\\AppShell.xaml",
-              "ToolTip": "C:\\Users\\AJ\\source\\repos\\korokanta99\\ToDoList-MobDev\\MauiApp1\\MauiApp1\\AppShell.xaml",
+              "ToolTip": "C:\\Users\\AJ\\Desktop\\bewer\\ToDoList-MobDev\\MauiApp1\\MauiApp1\\AppShell.xaml",
               "RelativeToolTip": "MauiApp1\\AppShell.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-02-28T14:49:37.895Z"
+              "WhenOpened": "2025-02-28T14:49:37.895Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "SigninPage.xaml",
-              "DocumentMoniker": "C:\\Users\\AJ\\source\\repos\\korokanta99\\ToDoList-MobDev\\MauiApp1\\MauiApp1\\SigninPage.xaml",
+              "DocumentMoniker": "C:\\Users\\AJ\\Desktop\\bewer\\ToDoList-MobDev\\MauiApp1\\MauiApp1\\SigninPage.xaml",
               "RelativeDocumentMoniker": "MauiApp1\\SigninPage.xaml",
-              "ToolTip": "C:\\Users\\AJ\\source\\repos\\korokanta99\\ToDoList-MobDev\\MauiApp1\\MauiApp1\\SigninPage.xaml",
+              "ToolTip": "C:\\Users\\AJ\\Desktop\\bewer\\ToDoList-MobDev\\MauiApp1\\MauiApp1\\SigninPage.xaml",
               "RelativeToolTip": "MauiApp1\\SigninPage.xaml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAACYAAAAAAAAAAAAswEQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2025-02-28T14:49:30.697Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "MainPage.xaml",
-              "DocumentMoniker": "C:\\Users\\AJ\\source\\repos\\korokanta99\\ToDoList-MobDev\\MauiApp1\\MauiApp1\\MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\AJ\\Desktop\\bewer\\ToDoList-MobDev\\MauiApp1\\MauiApp1\\MainPage.xaml",
               "RelativeDocumentMoniker": "MauiApp1\\MainPage.xaml",
-              "ToolTip": "C:\\Users\\AJ\\source\\repos\\korokanta99\\ToDoList-MobDev\\MauiApp1\\MauiApp1\\MainPage.xaml",
+              "ToolTip": "C:\\Users\\AJ\\Desktop\\bewer\\ToDoList-MobDev\\MauiApp1\\MauiApp1\\MainPage.xaml",
               "RelativeToolTip": "MauiApp1\\MainPage.xaml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAABBAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",

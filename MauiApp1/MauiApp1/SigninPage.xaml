@@ -9,59 +9,60 @@
                Grid.Row="1" VerticalOptions="CenterAndExpand"
                Margin="0, 0, 40, 0">
 
-
             <VerticalStackLayout>
                 <Label Text="Login"
-               FontSize="32"
-               FontAttributes="Bold"
-               HorizontalOptions="Center"
-               TextColor="Black"/>
+                       FontSize="32"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       TextColor="Black"/>
                 <Label Text="Hello!"
-               FontSize="18"
-               HorizontalOptions="Center"
-               TextColor="Black"/>
+                       FontSize="18"
+                       HorizontalOptions="Center"
+                       TextColor="Black"/>
 
                 <Frame BackgroundColor="{StaticResource DashboardBackground}"
-               CornerRadius="10"
-               Margin="20">
+                       CornerRadius="10"
+                       Margin="20">
                     <VerticalStackLayout>
                         <Label Text="Email or Username"
-                       FontSize="14"
-                       TextColor="Black"/>
-                        <Entry Placeholder="Enter your email or username"
-                       BackgroundColor="White"
-                       Margin="0,0,0,10"/>
+                               FontSize="14"
+                               TextColor="Black"/>
+                        <Entry x:Name="entryEmail"
+                               Placeholder="Enter your email"
+                               BackgroundColor="White"
+                               Margin="0,0,0,10"/>
 
                         <Label Text="Password"
-                       FontSize="14"
-                       TextColor="Black"/>
-                        <Entry Placeholder="Enter your password"
-                       IsPassword="True"
-                       BackgroundColor="White"/>
+                               FontSize="14"
+                               TextColor="Black"/>
+                        <Entry x:Name="entryPassword"
+                               Placeholder="Enter your password"
+                               IsPassword="True"
+                               BackgroundColor="White"/>
 
                         <Button Text="Login"
-                        BackgroundColor="Gold"
-                        TextColor="Black"
-                        CornerRadius="5"
-                        Margin="0,10,0,0"/>
+                                BackgroundColor="Gold"
+                                TextColor="Black"
+                                CornerRadius="5"
+                                Margin="0,10,0,0"
+                                Clicked="OnLoginClicked"/>
                     </VerticalStackLayout>
                 </Frame>
 
                 <Label Text="Forgot Password"
-               FontSize="14"
-               TextColor="Black"
-               HorizontalOptions="Center"/>
+                       FontSize="14"
+                       TextColor="Black"
+                       HorizontalOptions="Center"/>
 
                 <HorizontalStackLayout HorizontalOptions="Center">
                     <Label Text="Don’t have an account? "
-                   FontSize="14"
-                   TextColor="Black"/>
+                           FontSize="14"
+                           TextColor="Black"/>
                     <Label Text="Register now"
-                   FontSize="14"
-                   TextColor="Green"/>
+                           FontSize="14"
+                           TextColor="Green"/>
                 </HorizontalStackLayout>
             </VerticalStackLayout>
-
         </Frame>
     </Grid>
 </ContentPage>

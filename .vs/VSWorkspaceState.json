@@ -1,7 +1,11 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\MauiApp1",
+    "\\MauiApp1\\MauiApp1",
+    "\\MauiApp1\\MauiApp1\\Platforms\\Android",
+    "\\MauiApp1\\MauiApp1\\Services"
   ],
-  "SelectedNode": "\\MauiApp1.sln",
+  "SelectedNode": "\\MauiApp1\\MauiApp1.sln",
   "PreviewInSolutionExplorer": false
 }
