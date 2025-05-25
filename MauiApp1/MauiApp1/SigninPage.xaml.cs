@@ -10,6 +10,8 @@ public partial class SigninPage : ContentPage
     public SigninPage()
     {
         InitializeComponent();
+        NavigationPage.SetHasNavigationBar(this, false);
+        NavigationPage.SetHasBackButton(this, false);
         _apiService = new ApiService();
     }
 
@@ -34,10 +36,12 @@ public partial class SigninPage : ContentPage
             if (status == 200)
             {
                 var userData = result.GetProperty("data");
+                int userId = userData.GetProperty("id").GetInt32();
                 string name = $"{userData.GetProperty("fname").GetString()} {userData.GetProperty("lname").GetString()}";
 
                 await DisplayAlert("Welcome", $"Hello, {name}!", "OK");
 
+                await Navigation.PushAsync(new TodoList(userId));
            
             }
             else
@@ -51,4 +55,11 @@ public partial class SigninPage : ContentPage
             await DisplayAlert("Error", "Invalid server response.", "OK");
         }
     }
+
+    private async void Tap_Register(object sender, TappedEventArgs e)
+    {
+        Navigation.PushAsync(new SignupPage());
+    }
+
+
 }

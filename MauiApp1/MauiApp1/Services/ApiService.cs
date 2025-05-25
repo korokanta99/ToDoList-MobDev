@@ -34,5 +34,12 @@ namespace MauiApp1.Services
             return await response.Content.ReadAsStringAsync();
         }
 
+        public async Task<string> GetTasksAsync(string status, int userId)
+        {
+            var url = $"/getItems_action.php?status={Uri.EscapeDataString(status)}&user_id={userId}";
+            var response = await _client.GetAsync(url);
+            return await response.Content.ReadAsStringAsync();
+        }
+
     }
 }

@@ -7,9 +7,6 @@
     Shell.FlyoutBehavior="Flyout"
     Title="MauiApp1">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:SigninPage}"
-        Route="SignupPage" />
+    <ShellContent></ShellContent>
 
 </Shell>

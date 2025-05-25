@@ -10,6 +10,8 @@ public partial class SignupPage : ContentPage
     public SignupPage()
     {
         InitializeComponent();
+        NavigationPage.SetHasNavigationBar(this, false);
+        NavigationPage.SetHasBackButton(this, false);
         _apiService = new ApiService();
     }
 
@@ -42,4 +44,5 @@ public partial class SignupPage : ContentPage
         var response = await _apiService.SignUpAsync(model);
         await DisplayAlert("API Response", response, "OK");
     }
+
 }
