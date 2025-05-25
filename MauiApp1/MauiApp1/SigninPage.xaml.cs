@@ -11,6 +11,7 @@ public partial class SigninPage : ContentPage
     {
         InitializeComponent();
         _apiService = new ApiService();
+        Shell.SetNavBarIsVisible(this, false);
     }
 
     private async void OnLoginClicked(object sender, EventArgs e)
@@ -38,7 +39,7 @@ public partial class SigninPage : ContentPage
 
                 await DisplayAlert("Welcome", $"Hello, {name}!", "OK");
 
-           
+                await Navigation.PushAsync(new ToDoList());
             }
             else
             {
@@ -51,4 +52,9 @@ public partial class SigninPage : ContentPage
             await DisplayAlert("Error", "Invalid server response.", "OK");
         }
     }
+    private async void OnRegisterTapped(object sender, EventArgs e)
+    {
+        await Navigation.PushAsync(new SignupPage());
+    }
+
 }

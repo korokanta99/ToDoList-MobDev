@@ -11,6 +11,7 @@ public partial class SignupPage : ContentPage
     {
         InitializeComponent();
         _apiService = new ApiService();
+        Shell.SetNavBarIsVisible(this, false);
     }
 
     private async void OnRegisterClicked(object sender, EventArgs e)
