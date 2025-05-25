@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.EditTask"
+             Title="Edit Task"
+             BackgroundColor="#444444"
+             Shell.NavBarIsVisible="False">
+
+    <Grid RowDefinitions="80, *, Auto" Padding="0,0,0,10">
+
+        <Grid BackgroundColor="#444444"
+              ColumnDefinitions="*, 10"
+              RowDefinitions="*, 10"
+              Padding="10,8,5,0">
+            <Label Text="Edit Task"
+                   HorizontalOptions="Start"
+                   VerticalOptions="Center"
+                   FontAttributes="Bold"
+                   FontSize="40"
+                   Padding="40,3,0,0"
+                   Margin="0,0,0,10"
+                   TextColor="White"/>
+            <Image Source="user_icon_svgrepo.svg"
+                   HorizontalOptions="End"
+                   WidthRequest="40"
+                   HeightRequest="35"/>
+        </Grid>
+
+        <Grid Grid.Row="1" Padding="20" RowDefinitions="Auto, Auto, Auto" RowSpacing="10">
+
+            <Border Grid.Row="0"
+                    BackgroundColor="White"
+                    StrokeShape="RoundRectangle 10"
+                    Padding="10"
+                    HorizontalOptions="Start"
+                    WidthRequest="300">
+                <Border.Shadow>
+                    <Shadow Brush="Black" Offset="2,2" Opacity="0.2"/>
+                </Border.Shadow>
+                <Entry Placeholder="Task Title" FontSize="18"/>
+            </Border>
+
+            <Border Grid.Row="1"
+                    BackgroundColor="White"
+                    StrokeShape="RoundRectangle 10"
+                    Padding="10"
+                    HorizontalOptions="Start"
+                    WidthRequest="180">
+                <Border.Shadow>
+                    <Shadow Brush="Black" Offset="2,2" Opacity="0.2"/>
+                </Border.Shadow>
+                <DatePicker FontSize="18"/>
+            </Border>
+
+            <ScrollView Grid.Row="2"
+                        HeightRequest="300">
+                <Border BackgroundColor="White"
+                        StrokeShape="RoundRectangle 10"
+                        Padding="10"
+                        Margin="0,5,0,0">
+                    <Border.Shadow>
+                        <Shadow Brush="Black" Offset="2,2" Opacity="0.2"/>
+                    </Border.Shadow>
+                    <Editor Placeholder="Description"
+                            FontSize="18"
+                            AutoSize="TextChanges"
+                            HeightRequest="280"/>
+                </Border>
+            </ScrollView>
+
+        </Grid>
+
+        <Grid Grid.Row="2"
+              Padding="10"
+              ColumnDefinitions="*"
+              HorizontalOptions="FillAndExpand">
+
+            <VerticalStackLayout Spacing="10"
+                                 HorizontalOptions="FillAndExpand">
+
+                <HorizontalStackLayout Spacing="10"
+                                       HorizontalOptions="Center">
+
+                    <Button Text="Clear"
+                            FontAttributes="Bold"
+                            FontSize="14"
+                            BackgroundColor="LightGray"
+                            TextColor="Black"
+                            WidthRequest="90"/>
+
+                    <Button Text="Dismiss"
+                            FontAttributes="Bold"
+                            FontSize="14"
+                            BackgroundColor="LightGray"
+                            TextColor="Black"
+                            WidthRequest="90"/>
+
+                    <Button x:Name="completionToggleButton"
+                            FontAttributes="Bold"
+                            FontSize="14"
+                            Text="✓"
+                            BackgroundColor="Gray"
+                            TextColor="White"
+                            WidthRequest="50"
+                            HeightRequest="50"
+                            CornerRadius="25"/>
+                </HorizontalStackLayout>
+
+                <Button Text="Done"
+                        FontAttributes="Bold"
+                        FontSize="16"
+                        BackgroundColor="Gold"
+                        TextColor="Black"
+                        HeightRequest="50"
+                        HorizontalOptions="FillAndExpand"/>
+            </VerticalStackLayout>
+        </Grid>
+
+    </Grid>
+</ContentPage>

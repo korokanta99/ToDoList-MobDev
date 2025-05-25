@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp1.TodoList"
              Title="TodoList"
-             BackgroundColor="DarkGray"
+             BackgroundColor="#444444"
              Shell.NavBarIsVisible="False">
     <Grid RowDefinitions="80, *, 70" Padding="0,0,0,10">
 
@@ -18,6 +18,7 @@
                    FontSize="40"
                    Padding="40,3,0,0"
                    Margin="0,0,0,10"
+                    TextColor="White"
                    />
             <Image HorizontalOptions="End" Source="user_icon_svgrepo.svg"
                 WidthRequest="40"
@@ -76,13 +77,14 @@
         </ListView>
 
         <VerticalStackLayout Grid.Row="2" Padding="10" Margin="0,0,10,0">
-            <Button HorizontalOptions="End" BackgroundColor="Gold"
+            <Button HorizontalOptions="Center" BackgroundColor="Gold"
                 Padding="5"
-                WidthRequest="120"
+                WidthRequest="140"
                 HeightRequest="50"
                 Text="Add Task  +"
                 FontAttributes="Bold"
-                FontSize="15"
+                FontSize="19"
+                Clicked="OnAddTaskClicked"
                 />
 
         </VerticalStackLayout>

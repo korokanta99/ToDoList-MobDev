@@ -54,6 +54,12 @@ namespace MauiApp1
                 await DisplayAlert("Error", "Failed to load tasks.", "OK");
             }
         }
+
+        private async void OnAddTaskClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new AddTask());
+        }
+
     }
 
 }
