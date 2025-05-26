@@ -3,8 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp1.EditTask"
              Title="Edit Task"
-             BackgroundColor="#444444"
-             Shell.NavBarIsVisible="False">
+             BackgroundColor="DimGray"
+             >
 
     <Grid RowDefinitions="80, *, Auto" Padding="0,0,0,10">
 
@@ -37,23 +37,12 @@
                 <Border.Shadow>
                     <Shadow Brush="Black" Offset="2,2" Opacity="0.2"/>
                 </Border.Shadow>
-                <Entry Placeholder="Task Title" FontSize="18"/>
-            </Border>
-
-            <Border Grid.Row="1"
-                    BackgroundColor="White"
-                    StrokeShape="RoundRectangle 10"
-                    Padding="10"
-                    HorizontalOptions="Start"
-                    WidthRequest="180">
-                <Border.Shadow>
-                    <Shadow Brush="Black" Offset="2,2" Opacity="0.2"/>
-                </Border.Shadow>
-                <DatePicker FontSize="18"/>
+                <Entry Placeholder="Task Title" FontSize="18"
+                       TextColor="Black"/>
             </Border>
 
             <ScrollView Grid.Row="2"
-                        HeightRequest="300">
+                        HeightRequest="380">
                 <Border BackgroundColor="White"
                         StrokeShape="RoundRectangle 10"
                         Padding="10"
@@ -64,7 +53,8 @@
                     <Editor Placeholder="Description"
                             FontSize="18"
                             AutoSize="TextChanges"
-                            HeightRequest="280"/>
+                            HeightRequest="350"
+                            TextColor="Black"/>
                 </Border>
             </ScrollView>
 
@@ -84,14 +74,14 @@
                     <Button Text="Clear"
                             FontAttributes="Bold"
                             FontSize="14"
-                            BackgroundColor="LightGray"
+                            BackgroundColor="Gold"
                             TextColor="Black"
                             WidthRequest="90"/>
 
                     <Button Text="Dismiss"
                             FontAttributes="Bold"
                             FontSize="14"
-                            BackgroundColor="LightGray"
+                            BackgroundColor="Gold"
                             TextColor="Black"
                             WidthRequest="90"/>
 
@@ -99,20 +89,21 @@
                             FontAttributes="Bold"
                             FontSize="14"
                             Text="✓"
-                            BackgroundColor="Gray"
-                            TextColor="White"
+                            BackgroundColor="LightGoldenrodYellow"
+                            TextColor="Black"
                             WidthRequest="50"
                             HeightRequest="50"
                             CornerRadius="25"/>
                 </HorizontalStackLayout>
 
-                <Button Text="Done"
+                <Button Text="Save"
                         FontAttributes="Bold"
                         FontSize="16"
                         BackgroundColor="Gold"
                         TextColor="Black"
                         HeightRequest="50"
-                        HorizontalOptions="FillAndExpand"/>
+                        WidthRequest="350"
+                        />
             </VerticalStackLayout>
         </Grid>
 

@@ -3,8 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp1.AddTask"
              Title="Add New Task"
-             BackgroundColor="#444444"
-             Shell.NavBarIsVisible="False">
+             BackgroundColor="DimGray"
+             >
 
     <Grid RowDefinitions="80, *, 70" Padding="0,0,0,10">
 
@@ -39,23 +39,12 @@
                 <Border.Shadow>
                     <Shadow Brush="Black" Offset="2,2" Opacity="0.2" />
                 </Border.Shadow>
-                <Entry Placeholder="Task Title" FontSize="18" />
-            </Border>
-
-            <Border Grid.Row="1"
-            BackgroundColor="White"
-            StrokeShape="RoundRectangle 10"
-            Padding="10"
-            HorizontalOptions="Start"
-            WidthRequest="180">
-                <Border.Shadow>
-                    <Shadow Brush="Black" Offset="2,2" Opacity="0.2" />
-                </Border.Shadow>
-                <DatePicker FontSize="18" />
+                <Entry Placeholder="Task Title" FontSize="18"
+                       TextColor="Black"/>
             </Border>
 
             <ScrollView Grid.Row="2"
-                HeightRequest="300">
+                HeightRequest="380">
                 <Border BackgroundColor="White"
                 StrokeShape="RoundRectangle 10"
                 Padding="10"
@@ -66,20 +55,21 @@
                     <Editor Placeholder="Description"
                     FontSize="18"
                     AutoSize="TextChanges"
-                    HeightRequest="280" />
+                    HeightRequest="350"
+                    TextColor="Black"/>
                 </Border>
             </ScrollView>
 
         </Grid>
 
-        <VerticalStackLayout Grid.Row="2" Padding="10" Margin="0,0,10,0">
+        <VerticalStackLayout Grid.Row="2" Padding="10" Margin="0,0,10,0" HeightRequest="145" VerticalOptions="Center">
             <Button BackgroundColor="Gold"
                 Padding="5"
-                WidthRequest="140"
                 HeightRequest="50"
+                WidthRequest="350"
                 Text="Add Task  +"
                 FontAttributes="Bold"
-                FontSize="19"
+                FontSize="16"
             />
             
 

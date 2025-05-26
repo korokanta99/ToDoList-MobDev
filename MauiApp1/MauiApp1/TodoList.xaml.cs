@@ -57,7 +57,7 @@ namespace MauiApp1
 
         private async void OnAddTaskClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new AddTask());
+            await Navigation.PushModalAsync(new AddTask());
         }
 
     }
