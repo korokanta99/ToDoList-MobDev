@@ -21,9 +21,6 @@
     <MauiXaml Update="SignupPage.xaml">
       <SubType>Designer</SubType>
     </MauiXaml>
-    <MauiXaml Update="ToDoList.xaml">
-      <SubType>Designer</SubType>
-    </MauiXaml>
   </ItemGroup>
   <ItemGroup>
     <None Update="App.xaml">

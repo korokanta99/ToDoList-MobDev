@@ -3,8 +3,9 @@
     "",
     "\\MauiApp1",
     "\\MauiApp1\\MauiApp1",
-    "\\MauiApp1\\MauiApp1\\Services"
+    "\\MauiApp1\\MauiApp1\\Resources",
+    "\\MauiApp1\\MauiApp1\\Resources\\AppIcon",
+    "\\MauiApp1\\MauiApp1\\Resources\\Images"
   ],
-  "SelectedNode": "\\MauiApp1\\MauiApp1.sln",
   "PreviewInSolutionExplorer": false
 }

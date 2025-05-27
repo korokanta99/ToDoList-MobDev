@@ -34,5 +34,78 @@ namespace MauiApp1.Services
             return await response.Content.ReadAsStringAsync();
         }
 
+        public async Task<string> GetTasksAsync(string status, int userId)
+        {
+            var url = $"/getItems_action.php?status={Uri.EscapeDataString(status)}&user_id={userId}";
+            var response = await _client.GetAsync(url);
+            return await response.Content.ReadAsStringAsync();
+        }
+
+        public async Task<string> AddTaskAsync(string item_name, string item_description, int user_id, string status, string timemodified)
+        {
+            var taskData = new
+            {
+                item_name,
+                item_description,
+                user_id,
+                status,
+                timemodified
+            };
+
+            var json = JsonSerializer.Serialize(taskData);
+            var content = new StringContent(json, Encoding.UTF8, "application/json");
+
+            var response = await _client.PostAsync("/addItem_action.php", content);
+            return await response.Content.ReadAsStringAsync();
+        }
+
+        public async Task<string> EditTaskAsync(int item_id, string item_name, string item_description, string timemodified)
+        {
+            var updatedTask = new
+            {
+                item_id,
+                item_name,
+                item_description,
+                timemodified
+            };
+
+            var json = JsonSerializer.Serialize(updatedTask);
+            var content = new StringContent(json, Encoding.UTF8, "application/json");
+
+            var request = new HttpRequestMessage(HttpMethod.Put, "/editItem_action.php")
+            {
+                Content = content
+            };
+
+            var response = await _client.SendAsync(request);
+            return await response.Content.ReadAsStringAsync();
+        }
+
+        public async Task<string> DeleteTaskAsync(int item_id)
+        {
+            var response = await _client.DeleteAsync($"/deleteItem_action.php?item_id={item_id}");
+            return await response.Content.ReadAsStringAsync();
+        }
+
+        public async Task<string> ToggleTaskStatusAsync(int item_id, string newStatus)
+        {
+            var statusData = new
+            {
+                item_id,
+                status = newStatus
+            };
+
+            var json = JsonSerializer.Serialize(statusData);
+            var content = new StringContent(json, Encoding.UTF8, "application/json");
+
+            var request = new HttpRequestMessage(HttpMethod.Put, "/statusItem_action.php")
+            {
+                Content = content
+            };
+
+            var response = await _client.SendAsync(request);
+            return await response.Content.ReadAsStringAsync();
+        }
+
     }
 }

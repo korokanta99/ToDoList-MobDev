@@ -3,14 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MauiApp1.SignupPage"
              Title="Signup"
-             BackgroundColor="#333333">
-
-    <Grid RowDefinitions="9*,1*" Padding="10">
+             BackgroundColor="#333333"
+             >
+    <ScrollView>
+        <Grid RowDefinitions="9*,1*" Padding="10">
         <Frame BackgroundColor="#333333"
                VerticalOptions="Center"
                BorderColor="Transparent">
 
-            <ScrollView>
                 <VerticalStackLayout>
 
                     <Label Text="Register"
@@ -25,11 +25,12 @@
                            TextColor="White"
                            Margin="10,0,0,10"/>
 
-                    <Frame BackgroundColor="#444444"
+                    <Frame BackgroundColor="{StaticResource DashboardBackground}"
                            CornerRadius="10"
                            Margin="10,20,10,10"
                            HasShadow="True">
                         <VerticalStackLayout Padding="10">
+
 
                             <Label Text="First Name"
                                    FontSize="14"
@@ -40,41 +41,24 @@
                                    BackgroundColor="White"
                                    Margin="0,0,0,10">
                                 <Entry x:Name="entryFirstName"
-                                   Placeholder="Enter your first name"
-                                   BackgroundColor="White"
-                                   TextColor="Black"/>
+                                       Placeholder="Enter your First Name"
+                                       BackgroundColor="White"
+                                       TextColor="Black"/>
                             </Frame>
 
-                            
                             <Label Text="Last Name"
-                                   FontSize="14"
-                                   TextColor="White"
-                                   Margin="0,0,0,5"/>
+                                    FontSize="14"
+                                    TextColor="White"
+                                    Margin="0,0,0,5"/>
                             <Frame BorderColor="Transparent"
                                    Padding="1"
                                    BackgroundColor="White"
                                    Margin="0,0,0,10">
                                 <Entry x:Name="entryLastName"
-                                   Placeholder="Enter your last name"
-                                   BackgroundColor="White"
-                                   TextColor="Black"/>
+                                        Placeholder="Enter your Last Name"
+                                        BackgroundColor="White"
+                                        TextColor="Black"/>
                             </Frame>
-                            
-
-                            <Label Text="Username"
-                                   FontSize="14"
-                                   TextColor="White"
-                                   Margin="0,0,0,5"/>
-                            <Frame BorderColor="Transparent"
-                                   Padding="1"
-                                   BackgroundColor="White"
-                                   Margin="0,0,0,10">
-                                <Entry x:Name="usernameEntry"
-                                       Placeholder="Enter your username"
-                                       BackgroundColor="White"
-                                       TextColor="Black"/>
-                            </Frame>
-
 
                             <Label Text="Email"
                                    FontSize="14"
@@ -131,7 +115,7 @@
                         </VerticalStackLayout>
                     </Frame>
                 </VerticalStackLayout>
-            </ScrollView>
-        </Frame>
+            </Frame>
     </Grid>
+    </ScrollView>
 </ContentPage>

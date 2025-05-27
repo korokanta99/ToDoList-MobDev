@@ -1,4 +1,4 @@
-using MauiApp1.Services;
+﻿using MauiApp1.Services;
 using System.Text.Json;
 
 namespace MauiApp1;
@@ -10,8 +10,9 @@ public partial class SigninPage : ContentPage
     public SigninPage()
     {
         InitializeComponent();
+        NavigationPage.SetHasNavigationBar(this, false);
+        NavigationPage.SetHasBackButton(this, false);
         _apiService = new ApiService();
-        Shell.SetNavBarIsVisible(this, false);
     }
 
     private async void OnLoginClicked(object sender, EventArgs e)
@@ -35,11 +36,17 @@ public partial class SigninPage : ContentPage
             if (status == 200)
             {
                 var userData = result.GetProperty("data");
-                string name = $"{userData.GetProperty("fname").GetString()} {userData.GetProperty("lname").GetString()}";
+                int userId = userData.GetProperty("id").GetInt32();
+                string fname = userData.GetProperty("fname").GetString();
+                string lname = userData.GetProperty("lname").GetString();
 
-                await DisplayAlert("Welcome", $"Hello, {name}!", "OK");
+                SessionService.Instance.UserId = userId;
+                SessionService.Instance.FName = fname;
+                SessionService.Instance.LName = lname;
+                SessionService.Instance.Email = userData.GetProperty("email").GetString();
 
-                await Navigation.PushAsync(new ToDoList());
+                Application.Current.MainPage = new AppShell();
+                await Shell.Current.GoToAsync("//CompleteList");
             }
             else
             {
@@ -52,9 +59,12 @@ public partial class SigninPage : ContentPage
             await DisplayAlert("Error", "Invalid server response.", "OK");
         }
     }
-    private async void OnRegisterTapped(object sender, EventArgs e)
+
+
+    private async void Tap_Register(object sender, TappedEventArgs e)
     {
-        await Navigation.PushAsync(new SignupPage());
+        Navigation.PushAsync(new SignupPage());
     }
+
 
 }

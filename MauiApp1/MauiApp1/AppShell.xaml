@@ -7,19 +7,16 @@
     Shell.FlyoutBehavior="Flyout"
     Title="MauiApp1">
 
-    <ShellContent
-        Title="Home"
-        ContentTemplate="{DataTemplate local:SigninPage}"
-        Route="SignupPage" />
-
-    <ShellContent
+    <TabBar>
+        <ShellContent
             Title="Pending"
-            ContentTemplate="{DataTemplate local:ToDoList}"
-            Route="ToDoList" />
+            ContentTemplate="{DataTemplate local:TodoList}"
+            Route="ToDoTaskList" />
 
-    <ShellContent
+        <ShellContent
         Title="Completed"
-        ContentTemplate="{DataTemplate local:ToDoList}"
-        Route="ToDoList" />
+        ContentTemplate="{DataTemplate local:CompleteList}"
+        Route="CompletedTaskList" />
+    </TabBar>
 
 </Shell>

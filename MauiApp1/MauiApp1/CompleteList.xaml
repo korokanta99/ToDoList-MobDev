@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.CompleteList"
+             Title="CompleteList"
+             BackgroundColor="Gray"
+             Shell.NavBarIsVisible="False">
+    <Grid RowDefinitions="80, *, 70" Padding="0,0,0,10">
+
+        <Grid BackgroundColor="#444444"
+              Margin="0"
+              ColumnDefinitions="*, 10"
+              RowDefinitions="*, 10"
+              Padding="10,8,5,0">
+            <Label HorizontalOptions="Start" Text="Completed List"
+                   VerticalOptions="Center"
+                   FontAttributes="Bold"
+                   FontSize="40"
+                   Padding="40,3,0,0"
+                   Margin="0,0,0,10"
+                    TextColor="White"
+                   />
+            <Image HorizontalOptions="End" Source="user_icon_svgrepo.svg"
+                WidthRequest="40"
+                HeightRequest="35">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnUserIconTapped" />
+                </Image.GestureRecognizers>
+            </Image>
+
+        </Grid>
+
+        <ListView x:Name="taskLV" Grid.Row="1" RowHeight="80" ItemTapped="taskLV_ItemTapped">
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell Height="0">
+                        <Grid Padding="10"
+                              ColumnDefinitions="*, Auto, Auto"
+                              HeightRequest="80"
+                              >
+                            <Border
+                                   Padding="10"
+                                   Margin="0,5"
+                                   BackgroundColor="White"
+                                   StrokeShape="RoundRectangle 10">
+                                <Label Text="{Binding item_name}"
+                                VerticalOptions="Fill"
+                                FontSize="18"
+                                TextColor="Black"
+                                       />
+                            </Border>
+
+                            <Image Source="trash_svgrepo.svg" Grid.Column="1"
+                                   HorizontalOptions="Center"
+                                   VerticalOptions="Center"
+                                   WidthRequest="25"
+                                   HeightRequest="25"
+                                   Margin="10,0,5,0"
+                                   BindingContext="{Binding}"
+                                   >
+                                <Image.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="OnDeleteTapped" />
+                                </Image.GestureRecognizers>
+
+
+                            </Image>
+
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+
+        <Grid x:Name="userPopup"
+          IsVisible="False"
+          BackgroundColor="#80000000"
+          Grid.RowSpan="3"
+          HorizontalOptions="FillAndExpand"
+          VerticalOptions="FillAndExpand"
+          ZIndex="99">
+
+            <Grid.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnUserPopupBackgroundTapped" />
+            </Grid.GestureRecognizers>
+
+            <Frame BackgroundColor="Transparent"
+               CornerRadius="15"
+               Padding="20"
+               WidthRequest="300"
+               HeightRequest="340"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               BorderColor="Transparent"
+               HasShadow="False">
+
+                <VerticalStackLayout Spacing="20" HorizontalOptions="Center" VerticalOptions="Center">
+                    <Image Source="bingus.jpg"
+                       WidthRequest="200"
+                       HeightRequest="180"
+                       Aspect="AspectFill"
+                       HorizontalOptions="Center" />
+
+                    <Button Text="Sign Out"
+                        FontAttributes="Bold"
+                        FontSize="18"
+                        BackgroundColor="Gold"
+                        TextColor="Black"
+                        WidthRequest="200"
+                        Clicked="OnSignOutClicked"/>
+                </VerticalStackLayout>
+            </Frame>
+        </Grid>
+
+    </Grid>
+</ContentPage>
