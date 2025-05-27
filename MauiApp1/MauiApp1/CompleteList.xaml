@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="MauiApp1.TodoList"
-             Title="TodoList"
+             x:Class="MauiApp1.CompleteList"
+             Title="CompleteList"
              BackgroundColor="Gray"
              Shell.NavBarIsVisible="False">
-
     <Grid RowDefinitions="80, *, 70" Padding="0,0,0,10">
 
         <Grid BackgroundColor="#444444"
@@ -13,7 +12,7 @@
               ColumnDefinitions="*, 10"
               RowDefinitions="*, 10"
               Padding="10,8,5,0">
-            <Label HorizontalOptions="Start" Text="ToDo List"
+            <Label HorizontalOptions="Start" Text="Completed List"
                    VerticalOptions="Center"
                    FontAttributes="Bold"
                    FontSize="40"
@@ -59,42 +58,18 @@
                                    Margin="10,0,5,0"
                                    BindingContext="{Binding}"
                                    >
-                                    <Image.GestureRecognizers>
-                                        <TapGestureRecognizer Tapped="OnDeleteTapped" />
-                                    </Image.GestureRecognizers>
-
-
-                            </Image>
-
-                            <Image Source="check_svgrepo.png" Grid.Column="2"
-                                   HorizontalOptions="Center"
-                                   VerticalOptions="Center"
-                                   WidthRequest="25"
-                                   HeightRequest="25"
-                                   Margin="10,0,5,0"
-                                   BindingContext="{Binding}"
-                                   >
                                 <Image.GestureRecognizers>
-                                    <TapGestureRecognizer Tapped="OnStatusToggleTapped" />
+                                    <TapGestureRecognizer Tapped="OnDeleteTapped" />
                                 </Image.GestureRecognizers>
+
+
                             </Image>
+
                         </Grid>
                     </ViewCell>
                 </DataTemplate>
             </ListView.ItemTemplate>
         </ListView>
-
-        <VerticalStackLayout Grid.Row="2" Padding="10" Margin="0,0,10,0">
-            <Button HorizontalOptions="End" BackgroundColor="Gold"
-                Padding="5"
-                WidthRequest="140"
-                HeightRequest="50"
-                Text="Add Task  +"
-                FontAttributes="Bold"
-                FontSize="19"
-                Clicked="OnAddTaskClicked"
-                />
-        </VerticalStackLayout>
 
         <Grid x:Name="userPopup"
           IsVisible="False"

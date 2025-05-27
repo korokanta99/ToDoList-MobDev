@@ -37,12 +37,16 @@ public partial class SigninPage : ContentPage
             {
                 var userData = result.GetProperty("data");
                 int userId = userData.GetProperty("id").GetInt32();
-                string name = $"{userData.GetProperty("fname").GetString()} {userData.GetProperty("lname").GetString()}";
+                string fname = userData.GetProperty("fname").GetString();
+                string lname = userData.GetProperty("lname").GetString();
 
-                await DisplayAlert("Welcome", $"Hello, {name}!", "OK");
+                SessionService.Instance.UserId = userId;
+                SessionService.Instance.FName = fname;
+                SessionService.Instance.LName = lname;
+                SessionService.Instance.Email = userData.GetProperty("email").GetString();
 
-                await Navigation.PushAsync(new TodoList(userId));
-           
+                await Navigation.PushAsync(new AppShell()); // No need to pass userId anymore
+
             }
             else
             {

@@ -5138,3 +5138,4 @@ C:\Users\Administrator\source\repos\TodoList\MauiApp1\MauiApp1\obj\Debug\net9.0-
 C:\Users\Administrator\source\repos\TodoList\MauiApp1\MauiApp1\obj\Debug\net9.0-android\android\marshal_methods.arm64-v8a.o
 C:\Users\Administrator\source\repos\TodoList\MauiApp1\MauiApp1\obj\Debug\net9.0-android\android\jni_remap.arm64-v8a.o
 C:\Users\Administrator\source\repos\TodoList\MauiApp1\MauiApp1\obj\Debug\net9.0-android\app_shared_libraries\arm64-v8a\libxamarin-app.so
+D:\repos\ToDoList-MobDev\MauiApp1\MauiApp1\obj\Debug\net9.0-android\resizetizer\r\drawable\bingus.jpg

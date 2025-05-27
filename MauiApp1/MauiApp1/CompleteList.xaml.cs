@@ -8,17 +8,16 @@ using System.Threading.Tasks;
 namespace MauiApp1
 {
 
-
-    public partial class TodoList : ContentPage, IRefreshablePage
+    public partial class CompleteList : ContentPage, IRefreshablePage
     {
         private readonly ApiService _apiService;
         private int _userId => SessionService.Instance.UserId;
 
-        private readonly CompleteList _completeList;
+        private readonly TodoList _todoList;
 
         public async Task ReloadTasksAsync() => LoadTasks();
 
-        public TodoList()
+        public CompleteList()
         {
             InitializeComponent();
             _apiService = new ApiService();
@@ -29,7 +28,7 @@ namespace MauiApp1
 
         private async void LoadTasks()
         {
-            string jsonResponse = await _apiService.GetTasksAsync("active", _userId);
+            string jsonResponse = await _apiService.GetTasksAsync("inactive", _userId);
 
             try
             {
@@ -48,7 +47,7 @@ namespace MauiApp1
                             item_id = task.GetProperty("item_id").GetInt32(),
                             item_name = task.GetProperty("item_name").GetString(),
                             item_description = task.GetProperty("item_description").GetString(),
-                            status = "active",
+                            status = "inactive",
                             timemodified = DateTime.Now.ToString()
                         });
                     }
@@ -56,22 +55,18 @@ namespace MauiApp1
                     taskLV.ItemsSource = tasks;
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 await DisplayAlert("Error", $"Failed to load tasks. \n {ex.Message}", "OK");
             }
         }
 
-        private async void OnAddTaskClicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new AddTask(this));
-        }
-
         private async void taskLV_ItemTapped(object sender, ItemTappedEventArgs e)
         {
             var task = (TodoItem)e.Item;
-            //await Navigation.PushAsync(new EditTask(this, _completeList, task));
+            //await Navigation.PushAsync(new EditTask2(this, _todoList, task));
             await Navigation.PushAsync(new EditTask(this, task));
+
         }
 
         private async void OnDeleteTapped(object sender, TappedEventArgs e)
@@ -138,7 +133,6 @@ namespace MauiApp1
 
             Application.Current.MainPage = new NavigationPage(new SigninPage());
         }
-
 
     }
 

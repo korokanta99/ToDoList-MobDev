@@ -4,6 +4,7 @@
              x:Class="MauiApp1.EditTask"
              Title="Edit Task"
              BackgroundColor="DimGray"
+             Shell.NavBarIsVisible="False"
              >
 
     <Grid RowDefinitions="80, *, Auto" Padding="0,0,0,10">
@@ -20,10 +21,13 @@
                    Padding="40,3,0,0"
                    Margin="0,0,0,10"
                    TextColor="White"/>
-            <Image Source="user_icon_svgrepo.svg"
-                   HorizontalOptions="End"
-                   WidthRequest="40"
-                   HeightRequest="35"/>
+            <Image HorizontalOptions="End" Source="user_icon_svgrepo.svg"
+                WidthRequest="40"
+                HeightRequest="35">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnUserIconTapped" />
+                </Image.GestureRecognizers>
+            </Image>
         </Grid>
 
         <Grid Grid.Row="1" Padding="20" RowDefinitions="Auto, Auto, Auto" RowSpacing="10">
@@ -37,12 +41,13 @@
                 <Border.Shadow>
                     <Shadow Brush="Black" Offset="2,2" Opacity="0.2"/>
                 </Border.Shadow>
-                <Entry Placeholder="Task Title" FontSize="18"
+                <Entry x:Name="taskTitleEntry"
+                       Placeholder="Task Title" FontSize="18"
                        TextColor="Black"/>
             </Border>
 
             <ScrollView Grid.Row="2"
-                        HeightRequest="380">
+                        HeightRequest="360">
                 <Border BackgroundColor="White"
                         StrokeShape="RoundRectangle 10"
                         Padding="10"
@@ -50,10 +55,11 @@
                     <Border.Shadow>
                         <Shadow Brush="Black" Offset="2,2" Opacity="0.2"/>
                     </Border.Shadow>
-                    <Editor Placeholder="Description"
+                    <Editor x:Name="taskDescEditor"
+                            Placeholder="Description"
                             FontSize="18"
                             AutoSize="TextChanges"
-                            HeightRequest="350"
+                            HeightRequest="320"
                             TextColor="Black"/>
                 </Border>
             </ScrollView>
@@ -71,29 +77,36 @@
                 <HorizontalStackLayout Spacing="10"
                                        HorizontalOptions="Center">
 
-                    <Button Text="Clear"
+                    <Button x:Name="cancelButton"
+                            Text="Cancel"
                             FontAttributes="Bold"
                             FontSize="14"
                             BackgroundColor="Gold"
                             TextColor="Black"
-                            WidthRequest="90"/>
+                            WidthRequest="90"
+                            Clicked="OnClickedCancel"
+                            />
 
-                    <Button Text="Dismiss"
+                    <Button x:Name="clearButton"
+                            Text="Clear"
                             FontAttributes="Bold"
                             FontSize="14"
                             BackgroundColor="Gold"
                             TextColor="Black"
-                            WidthRequest="90"/>
+                            WidthRequest="90"
+                            Clicked="OnClickedClear"
+                            />
 
                     <Button x:Name="completionToggleButton"
                             FontAttributes="Bold"
                             FontSize="14"
                             Text="✓"
-                            BackgroundColor="LightGoldenrodYellow"
+                            BackgroundColor="LightGray"
                             TextColor="Black"
                             WidthRequest="50"
                             HeightRequest="50"
-                            CornerRadius="25"/>
+                            CornerRadius="25"
+                            />
                 </HorizontalStackLayout>
 
                 <Button Text="Save"
@@ -103,8 +116,49 @@
                         TextColor="Black"
                         HeightRequest="50"
                         WidthRequest="350"
+                        Clicked="OnClickedSave"
                         />
             </VerticalStackLayout>
+        </Grid>
+
+        <Grid x:Name="userPopup"
+          IsVisible="False"
+          BackgroundColor="#80000000"
+          Grid.RowSpan="3"
+          HorizontalOptions="FillAndExpand"
+          VerticalOptions="FillAndExpand"
+          ZIndex="99">
+
+            <Grid.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnUserPopupBackgroundTapped" />
+            </Grid.GestureRecognizers>
+
+            <Frame BackgroundColor="Transparent"
+               CornerRadius="15"
+               Padding="20"
+               WidthRequest="300"
+               HeightRequest="340"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               BorderColor="Transparent"
+               HasShadow="False">
+
+                <VerticalStackLayout Spacing="20" HorizontalOptions="Center" VerticalOptions="Center">
+                    <Image Source="bingus.jpg"
+                       WidthRequest="200"
+                       HeightRequest="180"
+                       Aspect="AspectFill"
+                       HorizontalOptions="Center" />
+
+                    <Button Text="Sign Out"
+                        FontAttributes="Bold"
+                        FontSize="18"
+                        BackgroundColor="Gold"
+                        TextColor="Black"
+                        WidthRequest="200"
+                        Clicked="OnSignOutClicked"/>
+                </VerticalStackLayout>
+            </Frame>
         </Grid>
 
     </Grid>

@@ -74,6 +74,9 @@
 	  <MauiXaml Update="AddTask.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>
+	  <MauiXaml Update="CompleteList.xaml">
+	    <Generator>MSBuild:Compile</Generator>
+	  </MauiXaml>
 	  <MauiXaml Update="EditTask.xaml">
 	    <Generator>MSBuild:Compile</Generator>
 	  </MauiXaml>

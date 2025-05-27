@@ -10,8 +10,8 @@ public partial class SignupPage : ContentPage
     public SignupPage()
     {
         InitializeComponent();
-        NavigationPage.SetHasNavigationBar(this, false);
-        NavigationPage.SetHasBackButton(this, false);
+        NavigationPage.SetHasNavigationBar(this, true);
+        NavigationPage.SetHasBackButton(this, true);
         _apiService = new ApiService();
     }
 

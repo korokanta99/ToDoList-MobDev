@@ -4,6 +4,7 @@
              x:Class="MauiApp1.AddTask"
              Title="Add New Task"
              BackgroundColor="DimGray"
+             Shell.NavBarIsVisible="False"
              >
 
     <Grid RowDefinitions="80, *, 70" Padding="0,0,0,10">
@@ -22,9 +23,12 @@
             TextColor="White"
            />
             <Image HorizontalOptions="End" Source="user_icon_svgrepo.svg"
-        WidthRequest="40"
-        HeightRequest="35" 
-        />
+                WidthRequest="40"
+                HeightRequest="35">
+                <Image.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnUserIconTapped" />
+                </Image.GestureRecognizers>
+            </Image>
 
         </Grid>
 
@@ -39,12 +43,13 @@
                 <Border.Shadow>
                     <Shadow Brush="Black" Offset="2,2" Opacity="0.2" />
                 </Border.Shadow>
-                <Entry Placeholder="Task Title" FontSize="18"
+                <Entry x:Name="taskTitleEntry"
+                       Placeholder="Task Title" FontSize="18"
                        TextColor="Black"/>
             </Border>
 
             <ScrollView Grid.Row="2"
-                HeightRequest="380">
+                HeightRequest="360">
                 <Border BackgroundColor="White"
                 StrokeShape="RoundRectangle 10"
                 Padding="10"
@@ -52,10 +57,11 @@
                     <Border.Shadow>
                         <Shadow Brush="Black" Offset="2,2" Opacity="0.2" />
                     </Border.Shadow>
-                    <Editor Placeholder="Description"
+                    <Editor x:Name="taskDescEditor"
+                    Placeholder="Description"
                     FontSize="18"
                     AutoSize="TextChanges"
-                    HeightRequest="350"
+                    HeightRequest="330"
                     TextColor="Black"/>
                 </Border>
             </ScrollView>
@@ -63,17 +69,69 @@
         </Grid>
 
         <VerticalStackLayout Grid.Row="2" Padding="10" Margin="0,0,10,0" HeightRequest="145" VerticalOptions="Center">
-            <Button BackgroundColor="Gold"
+            <Grid RowDefinitions="*" ColumnDefinitions="50*, 50*">
+                <Button BackgroundColor="Gold"
                 Padding="5"
                 HeightRequest="50"
-                WidthRequest="350"
+                WidthRequest="130"
                 Text="Add Task  +"
                 FontAttributes="Bold"
                 FontSize="16"
-            />
-            
+                Clicked="OnAddTaskClicked"
+                Grid.Column="1"
+                />
 
+                <Button BackgroundColor="Gold"
+                Padding="5"
+                HeightRequest="50"
+                WidthRequest="130"
+                Text="Cancel"
+                FontAttributes="Bold"
+                FontSize="16"
+                Clicked="OnClickedCancel"
+                Grid.Column="0"/>
+            </Grid>
         </VerticalStackLayout>
+
+        <Grid x:Name="userPopup"
+          IsVisible="False"
+          BackgroundColor="#80000000"
+          Grid.RowSpan="3"
+          HorizontalOptions="FillAndExpand"
+          VerticalOptions="FillAndExpand"
+          ZIndex="99">
+
+            <Grid.GestureRecognizers>
+                <TapGestureRecognizer Tapped="OnUserPopupBackgroundTapped" />
+            </Grid.GestureRecognizers>
+
+            <Frame BackgroundColor="Transparent"
+               CornerRadius="15"
+               Padding="20"
+               WidthRequest="300"
+               HeightRequest="340"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               BorderColor="Transparent"
+               HasShadow="False">
+
+                <VerticalStackLayout Spacing="20" HorizontalOptions="Center" VerticalOptions="Center">
+                    <Image Source="bingus.jpg"
+                       WidthRequest="200"
+                       HeightRequest="180"
+                       Aspect="AspectFill"
+                       HorizontalOptions="Center" />
+
+                    <Button Text="Sign Out"
+                        FontAttributes="Bold"
+                        FontSize="18"
+                        BackgroundColor="Gold"
+                        TextColor="Black"
+                        WidthRequest="200"
+                        Clicked="OnSignOutClicked"/>
+                </VerticalStackLayout>
+            </Frame>
+        </Grid>
 
     </Grid>
 </ContentPage>
